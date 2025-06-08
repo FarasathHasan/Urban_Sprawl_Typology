@@ -23,13 +23,13 @@ TR = 30              # target resolution (m)
 WS = 30              # window size (pixels)
 SS = 5               # sliding step (pixels)
 
-ROAD_DIST_QUANTILE     = 0.25   # bottom 25% = close to roads for 2015/20
-ALIGN_THRESH           = 0.8    # cosine similarity ≥ 0.8
+ROAD_DIST_QUANTILE     = 0.25   
+ALIGN_THRESH           = 0.8    
 
 # Additional 2025 parameters:
-ROAD_DIST_QUANTILE_2025 = 0.20  # bottom 20% = main arteries
-CORE_PERC_2025          = 20    # inner 20% = core by centroid distance
-ISO_DIST_QUANTILE       = 0.50  # top 50% most isolated clustered patches → leapfrog
+ROAD_DIST_QUANTILE_2025 = 0.20  
+CORE_PERC_2025          = 20   
+ISO_DIST_QUANTILE       = 0.50  
 
 ROAD_FP = "Hong Kong DATAnew/distance from main roads_ceaned_HK.tiff"
 YEARS   = [2015, 2020, 2025]
