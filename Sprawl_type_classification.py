@@ -1,27 +1,5 @@
 #!/usr/bin/env python
 """
-High Resolution Urban Sprawl Classification for 2015, 2020 & 2025
-All years classified with the 2020-trained model to ensure consistency.
-Sprawl Type Codes (1–5):
-    1. Infill Development
-    2. Leapfrog Development
-    3. Urban Extension
-    4. Linear Development
-    5. Clustered Development
-
-Note: 2015 & 2020 processing unchanged. 2025 block refined so that
-any previously “removed” linear pixels become core (Infill, type 1),
-and only true linear growth remains along main arteries outside core.
-
-This version computes CRITIC weights **for the 20 metrics** (not the clusters),
-derives a composite score per cluster as the weighted sum of its 20 trimmed‐mean metrics,
-and exports three CSVs (one per year) listing:
-  • each metric (rows)
-  • the five cluster-trimmed-mean values (columns)
-  • a “CRITIC_weight” column for each metric’s weight
-  • a final row “composite_score” giving each cluster’s composite score.
-"""
-
 import os
 import math
 import numpy as np
