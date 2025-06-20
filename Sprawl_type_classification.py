@@ -19,9 +19,9 @@ from sklearn.cluster import DBSCAN
 from scipy.stats import trim_mean
 
 # — CONFIGURATION —
-TR = 30              # target resolution (m)
-WS = 30              # window size (pixels)
-SS = 5               # sliding step (pixels)
+TR = 30              
+WS = 17              
+SS = 5              
 
 ROAD_DIST_QUANTILE     = 0.25   
 ALIGN_THRESH           = 0.8    
